@@ -1,0 +1,11 @@
+.shadow-gradient {
+  border: 2px solid #c94b4b;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.shadow-gradient:focus {
+  box-shadow: 0 0 0 rem rgba(201, 75, 75, 0.5),
+    0 0 0 0.2rem rgba(75, 19, 79, 0.5);
+}

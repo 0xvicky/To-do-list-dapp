@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { Navbar, Note, Footer } from "./container";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Navbar />
+      <Note />
+    </>
   );
 }
 
 export default App;
+
+//Create a navbar component, design it at the very end and add a connect wallet functionality
+//Then create a note container
+//note container consist of input for note taking and add button, whenever the note is taken, it should be added in an array
+// and then using map function we get all the notes at the bottom
+//then footer
